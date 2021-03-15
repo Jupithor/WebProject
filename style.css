@@ -104,6 +104,9 @@ input, select {
 
 
 /* ------ RESET STYLESHEET END*/
+
+
+
 * {
     text-decoration: none;
 }
@@ -197,7 +200,7 @@ header .header-links{
     width: 100%;
     height: calc(100vh - 100px);
     background-size: cover;
-    background-image: url('img/Kirkegaard.jpg');
+    background-image: url('media/img/Kirkegaard.jpg');
     background-repeat: no-repeat;
     background-position: center ;
     background-size: cover;
@@ -264,7 +267,7 @@ header .header-links{
         overflow: hidden;
     }
     .index-links div{
-        margin: 10px 10px 0;
+        margin: 20px 10px 0;
         height: 230px;
         background-color: #f2f2f2;
         float: left;
@@ -279,23 +282,76 @@ header .header-links{
 
 }
 /*PICTURES*/
+.pictures {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.pictures h2 {
+    font-family: Catamaran;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+}
 .pictures .picture{
-    width: 240px;
-    height: 240px;
-    margin: 5px;
-    background-color: #e3d3e3;
+    width: 230px;
+    height: 230px;
+    margin: 20px 10px 0px;
+    background-color: #f2f2f2;
     float: left;
 }
+.pictures .picture p {
+    padding-top: 45%;
+    font-family: catamaran;
+    font-size: 24px;
+    font-weight: 600;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*POST*/
+.post-vid h2 {
+    font-family: catamaran;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+}
+.post-vid video {
+    margin: 0 auto;
+    display: block;
+    padding: 30px 0;
+    max-width: 1000px;
+}
+.post-vid article h3 {
+    font-family: catamaran;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.post-vid article p{
+    font-family: catamaran;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #111;
+    text-transform: uppercase;
+    column-count: 3;
+    column-gap: 30px;
+    padding-bottom: 20px;
+}
 /*FOOTER*/
-footer{
-    width: calc(100% - 80px);
+footer .related{
     padding: 40px 40px;
-    margin-top: 20px;
     background-color: #111;
     overflow: hidden;
 }
-
-
+footer .contact div{
+    display: none;
+}
 footer ul{
     width: fit-content;
     float:left;
@@ -327,6 +383,29 @@ footer ul li a{
 }
 
 @media only screen and (min-width:1000px){
+    footer .contact div{
+        background-color: #f2f2f2;
+        height: 200px;
+        display: block;
+    }
+    footer .contact h2 {
+        font-family: Catamaran;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        padding-top: 50px;
+    }
+    footer .contact p {
+        font-family: Catamaran;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 18px;
+        line-height: 150% ;
+    }
     .footer-links-cases{
         display: block;
     }
