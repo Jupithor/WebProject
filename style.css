@@ -264,26 +264,26 @@ header .header-links{
         margin: auto;
     }
     .index-links {
-        overflow: hidden;
+        display: flex;
+        flex-flow: row wrap;
     }
-    .index-links div{
+    .index-boxlink-square{
+        flex-basis: calc( 25% - 20px);
         margin: 20px 10px 0;
         height: 230px;
         background-color: #f2f2f2;
-        float: left;
-        
-    }
-    .index-boxlink-square{
-        width: calc(25% - 20px) !important;
     }
     .index-boxlink-rectangle{
-        width: calc(50% - 20px) !important;
+        flex-basis: calc( 50% - 20px);
+        margin: 20px 10px 0;
+        height: 230px;
+        background-color: #f2f2f2;
     }
 
 }
 /*PICTURES*/
 .pictures {
-    overflow: hidden;
+    display: flex;
     margin-bottom: 20px;
 }
 .pictures h2 {
